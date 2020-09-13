@@ -1,0 +1,216 @@
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+
+  body{
+
+      background-color: rgb(0, 0, 2);
+      background-image: url('background.jpg');
+      background-position: 100% 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      overflow-y: hidden;
+  }
+#task-list-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    background-color: rgba(25, 5, 44, 0.678);
+    width: 60%;
+    height: 70vh;
+    margin-top: 5rem;
+    margin-left: 18rem;
+    
+}
+
+.header{
+    /*background: whitesmoke; */
+   padding-top: 20px;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+.title{
+ 
+    padding-bottom: 5px;
+    width: 100%;
+  padding: 20px;
+  color: white;
+}
+h1{
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+textarea{
+    border: black 2px solid;
+    background-color: blanchedalmond;
+    
+    
+}
+.task-writter{
+    padding: 20px;
+    color: white;
+ ;
+}
+
+input{
+   
+    border:none;
+    padding: 5px;
+    
+}
+
+.addBtn{
+  background-color: rgba(63, 7, 95, 0.808);
+    padding: 5px;
+    cursor: pointer;
+    width: 5%;
+    
+}
+.addBtn:hover{
+    background-color: rgba(192, 185, 194, 0.527);
+}
+
+
+
+ul {
+  width: 80%;
+  margin-left: 5rem;
+    margin-top: 2rem;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    padding: 12px;
+    background: rgba(238, 238, 238, 0.376);
+    font-size: 16px;
+    transition: 0.2s;
+    
+  
+  
+}
+
+
+li{
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    padding: 12px;
+    background: rgba(238, 238, 238, 0.719);
+    font-size: 16px;
+    transition: 0.2s;
+    text-align: center;
+    /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  ul li:hover {
+    background: rgb(7, 1, 34);
+    color: white;
+  }
+
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color:rgba(59, 11, 148, 0.808);
+  color: white;
+}
+
+#day{
+  color: rgb(197, 178, 230);
+}
+#footer p{
+  
+  font-size: 18px;
+  color: rgb(248, 240, 255);
+  
+  }
+#footer {
+
+text-align: center;
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  body {
+    /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+       background-image: url('background.jpg');
+  }
+
+
+  #task-list-container{
+   margin-top: 2rem;
+    width: 90%;
+    height: 80vh;
+    margin-left: 1rem;
+  }
+ul{
+  margin-left: 2rem;
+}
+  .title{
+    
+    width: 100%;
+  padding: 10px;
+  color: white;
+}
+h1{
+  font-size: 27px;
+}
+.task-writter{
+  padding: 18px;
+  color: white;
+ display: flex;
+ right:50px;
+}
+
+.addBtn{
+  background-color: rgba(63, 7, 95, 0.808);
+  width: 30%;
+  cursor: pointer;
+ 
+
+  
+}
+#footer {
+
+text-align: center;
+  margin-top:5%;
+padding: 3px;
+
+  }
+#footer p{
+  
+  font-size: 11px;
+  color: rgb(29, 27, 31);
+  }
+
+}

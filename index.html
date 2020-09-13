@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="task-list-container">
+        <div class="header">
+            <div class="title">
+                <h1>Your <span id="day">ff </span> To Do List</h1>
+                <span id="date"></span> <span id="month"></span> <span id="year"></span>
+            </div>
+                <div class="task-writter">
+                    <input type="text" id="myInput" placeholder="What are your plans today?">
+                 <span onclick="newElement()" class="addBtn">Add</span>
+                </div>
+        </div>
+        <ul id="item-list">
+           <li class="item checked">Make Breakfast</li>
+           <li class="item">Check emails</li>
+           <li class="item">Work on project</li>
+           <li class="item">Make dinner</li>
+        </ul>
+        <footer id="footer"><p>&copy; 2020 My ToDo list Created by: Nomanna Mavata </p></footer>
+        <script src="app.js"></script>
+   
+</body>
+</html>
